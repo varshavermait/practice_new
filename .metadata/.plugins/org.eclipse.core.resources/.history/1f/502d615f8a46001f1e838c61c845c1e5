@@ -1,0 +1,16 @@
+package com.mypractice;
+
+import java.util.function.Consumer;
+
+public class LambdaStatic {
+	
+	public static void main(String args[])
+	{
+		LambdaStatic ls = new LambdaStatic();
+		ls.process(5, t -> System.out.println(t));
+	}
+	
+	public void process(int t, Consumer<Integer> consumer) {
+		consumer.accept(t);
+	}
+}

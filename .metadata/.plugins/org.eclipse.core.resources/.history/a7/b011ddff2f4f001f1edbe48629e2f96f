@@ -1,0 +1,20 @@
+package com.basics.array;
+
+public class TestArray {
+	
+	public static void main(String args[]) {
+		DArray<Integer> dArray = new DArray<>(2);
+		System.out.println("length" +dArray.size());
+		System.out.println("capacity "+dArray.capacity());
+		dArray.add(1);
+		System.out.println("length" +dArray.size());
+		System.out.println("capacity "+dArray.capacity());
+		
+		dArray.add(1);
+		dArray.add(1);
+		dArray.add(1);
+		System.out.println("length" +dArray.size());
+		System.out.println("capacity "+dArray.capacity());
+		
+	}
+}

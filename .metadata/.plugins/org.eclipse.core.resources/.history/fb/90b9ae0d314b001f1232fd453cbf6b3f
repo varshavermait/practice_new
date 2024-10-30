@@ -1,0 +1,31 @@
+package com.threadpractice;
+
+class Counter {
+	static int count = 1;
+	public Counter() {
+	} 
+	public void increment() {
+		count++;
+	}
+	public int getCount() {
+		return count;
+	}
+}
+
+public class RaceConditionTest {
+	
+	
+	
+	public static void main(String args[]) {
+	
+		Counter counter = new Counter();
+		
+		Thread t1 = new Thread(() -> counter.increment());
+		Thread t2 = new Thread(() -> counter.increment());
+		r1.run();
+		r2.run();
+		
+	}
+	
+	
+}

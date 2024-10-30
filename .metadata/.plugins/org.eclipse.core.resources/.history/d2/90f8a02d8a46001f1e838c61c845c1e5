@@ -1,0 +1,11 @@
+package com.mypractice;
+
+public class LambdaStatic {
+	
+	public static void main(String args[])
+	{
+		
+	}
+	
+	
+}

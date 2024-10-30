@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;SplitExpenses&apos;&#x0A;- Original project: &apos;SplitExpenses&apos;&#x0A;- Original elements:&#x0A;     SplitExpenses/src/main/java/newdesign&#x0A;     SplitExpenses/src/main/java/newdesign.newmodels" description="Delete elements" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;newdesign.newmodels" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;newdesign" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1712831237286" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,21 @@
+package com.threadpractice;
+
+class SharedResourceVolatile {
+	private boolean flag;
+	
+	public void setFlag() {
+		this.flag = true;
+	}
+	
+	public void printIfTrue() {
+		while(!flag)
+		{
+			System.out.println("Waiting");
+		}
+	}
+}
+
+
+public class VolatileExample {
+
+}

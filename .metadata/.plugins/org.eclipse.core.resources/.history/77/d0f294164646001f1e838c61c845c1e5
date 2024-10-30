@@ -1,0 +1,10 @@
+package com.mypractice;
+
+public class LambdaClosure {
+	public static void main(String args[])
+	{
+		
+	}	
+}
+
+

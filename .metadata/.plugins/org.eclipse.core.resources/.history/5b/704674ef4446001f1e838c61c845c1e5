@@ -1,0 +1,15 @@
+package com.mypractice;
+
+public class LambdaClosure {
+	public static void main(String args[])
+	{
+		
+	}
+	
+}
+
+@FunctionalInterface
+interface Test {
+	public void test();
+}
+

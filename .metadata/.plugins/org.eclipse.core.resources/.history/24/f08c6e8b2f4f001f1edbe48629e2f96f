@@ -1,0 +1,12 @@
+package com.basics.array;
+
+public class TestArray {
+	
+	public static void main(String args[]) {
+		DArray<Integer> dArray = new DArray<>(10);
+		System.out.println(dArray.size());
+		dArray.add(1);
+		System.out.println(dArray.size());
+		System.out.println(dArray.capacity());
+	}
+}

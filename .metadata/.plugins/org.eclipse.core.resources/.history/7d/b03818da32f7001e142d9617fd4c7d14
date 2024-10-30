@@ -1,0 +1,7 @@
+package newdesign;
+
+import java.util.List;
+
+public class ExpenseService {
+	public List<Expense> getExpensesForGroup(int grpId);
+}

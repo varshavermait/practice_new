@@ -1,0 +1,9 @@
+package newdesign;
+
+import java.util.List;
+
+import Model.Expense;
+
+public class ExpenseService {
+	public List<Expense> getExpensesForGroup(int grpId);
+}

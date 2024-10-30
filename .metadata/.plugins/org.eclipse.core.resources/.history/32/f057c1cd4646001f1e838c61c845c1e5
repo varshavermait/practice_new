@@ -1,0 +1,19 @@
+package com.mypractice;
+
+import java.util.function.Consumer;
+
+public class LambdaClosure {
+	
+	public static void main(String args[])
+	{
+		LambdaClosure lc = new LambdaClosure();
+		final int i = 1;
+		lc.process(5, a -> System.out.println(a+i));
+	}	
+	
+	public void process(int i, Consumer<Integer> consumer) {
+		consumer.accept(i);
+	}
+}
+
+

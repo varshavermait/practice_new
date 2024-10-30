@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.threadpractice.VolatileExample&apos; to &apos;AtomicExample&apos;&#x0A;- Original project: &apos;practice-java&apos;&#x0A;- Original element: &apos;com.threadpractice.VolatileExample&apos;&#x0A;- Renamed element: &apos;com.threadpractice.AtomicExample&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;VolatileExample&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.threadpractice{VolatileExample.java[VolatileExample" matchStrategy="1" name="AtomicExample" qualified="false" references="true" similarDeclarations="false" stamp="1724741717378" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package com.threadpractice;
+
+class Pen {
+	
+}
+
+class Paper {
+	
+}
+
+public class DeadlockExample {
+
+}

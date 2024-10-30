@@ -1,0 +1,47 @@
+package com.mypractice;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class StreamExample {
+	
+	public static void main(String args[]) {
+		List<Person> persons = Arrays.asList(new Person("ABC", "10", "ABC"), new Person("BBC", "10", "ABC"));
+		
+		persons.stream().filter(p -> p.getFname().startsWith("A")).forEach(System.out::println);
+		
+		// MAP
+		List<String> listFName = persons.stream().map(p -> p.getFname()).collect(Collectors.toList());
+		List<String> listLName = persons.stream().map(p -> p.getLname()).collect(Collectors.toList());
+		
+		System.out.println("list size "+listFName.size());
+		System.out.println("first elm "+listFName.get(0));
+		
+		
+		//FLAT-MAP
+		List<List<String>> allList = Arrays.asList(listFName, listLName);
+		List<String> all = allList.stream().flatMap(e -> e.stream()).collect(Collectors.toList());
+		System.out.println("list size "+all.size());
+
+		
+		// DISTINCT
+		long count = persons.stream().map(p -> p.getFname()).distinct().count();
+		System.out.println("distinct count "+count);
+		
+		
+		// Map - reduce
+		Optional<String> totalAge = persons.stream().map(p -> p.getAge())
+				.reduce((a, b) -> (Integer.parseInt(a) + Integer.parseInt(b))+"");
+		
+		System.out.println("total age "+totalAge);
+		
+		
+		// Min
+		persons.stream().min((p1, p2) -> p1.getFname().compareTo(p2.getFname()));
+	}
+	
+	
+}

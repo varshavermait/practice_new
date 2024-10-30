@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.mypractice&apos; to &apos;com.lambdapractice&apos;&#x0A;- Original project: &apos;lambda-practice&apos;&#x0A;- Original element: &apos;lambda-practice/src/main/java/com.mypractice&apos;&#x0A;- Renamed element: &apos;lambda-practice/src/main/java/com.lambdapractice&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.mypractice&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mypractice" name="com.lambdapractice" qualified="false" references="true" stamp="1721978924602" textual="false" version="1.0"/>
+</session>

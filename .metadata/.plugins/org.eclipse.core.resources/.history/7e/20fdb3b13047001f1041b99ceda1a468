@@ -1,0 +1,61 @@
+package com.mypractice;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class StreamExample {
+	
+	public static void main(String args[]) {
+		List<Person> persons = Arrays.asList(new Person("ABC", "10", "ABC",2), 
+				new Person("BBC", "11", "ABC", 1),
+				new Person("CBC", "12", "ABC", 3));
+		List<Integer> ids = Arrays.asList(10, 11);
+		
+		persons.stream().filter(p -> p.getFname().startsWith("A")).forEach(System.out::println);
+		
+		// MAP
+		List<String> listFName = persons.stream().map(p -> p.getFname()).collect(Collectors.toList());
+		List<String> listLName = persons.stream().map(p -> p.getLname()).collect(Collectors.toList());
+		
+		System.out.println("list size "+listFName.size());
+		System.out.println("first elm "+listFName.get(0));
+		
+		
+		
+		List<String> combined = Stream.concat(listFName.stream(), listLName.stream()).collect(Collectors.toList());
+		System.out.println("combined list size "+combined.size());
+		List<List<String>> allList = Arrays.asList(listFName, listLName);
+		
+		//FLAT-MAP
+		List<String> all = allList.stream().flatMap(e -> e.stream()).collect(Collectors.toList());
+		System.out.println("flat list size "+all.size());
+		
+		
+
+		
+		// DISTINCT
+		long count = persons.stream().map(p -> p.getFname()).distinct().count();
+		System.out.println("distinct count "+count);
+		
+		
+		// Map - reduce
+		Optional<String> totalAge = persons.stream().map(p -> p.getAge())
+				.reduce((a, b) -> (Integer.parseInt(a) + Integer.parseInt(b))+"");
+		
+		System.out.println("total age "+totalAge);
+		
+		
+		// Min
+		Optional<Person> minName = persons.stream().min((p1, p2) -> p1.getFname().compareTo(p2.getFname()));
+		System.out.println("min name "+minName.get().getFname());
+		
+		
+		// get 
+	}
+	
+	
+}

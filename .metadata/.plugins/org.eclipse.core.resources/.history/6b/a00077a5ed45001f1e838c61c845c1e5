@@ -1,0 +1,8 @@
+package com.mypractice;
+
+public class Person {
+	private String fname;
+	private String age;
+	private String lname;
+
+}

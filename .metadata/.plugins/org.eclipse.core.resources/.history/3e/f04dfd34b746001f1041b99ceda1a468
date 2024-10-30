@@ -1,0 +1,15 @@
+package com.mypractice;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamExample {
+	
+	public static void main(String args[]) {
+		List<Person> persons = Arrays.asList(new Person("ABC", "10", "ABC"));
+		
+		persons.stream().filter(p -> p.getFname().startsWith("A")).forEach(p -> System.out::println);;
+	}
+	
+	
+}

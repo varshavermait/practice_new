@@ -1,0 +1,17 @@
+package com.threadpractice;
+
+class Counter {
+	static int count = 1;
+	public Counter() {
+	} 
+	public void increment() {
+		count++;
+	}
+	public int getCount() {
+		return count;
+	}
+}
+
+public class RaceConditionTest {
+
+}

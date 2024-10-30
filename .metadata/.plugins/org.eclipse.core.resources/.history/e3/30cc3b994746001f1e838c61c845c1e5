@@ -1,0 +1,22 @@
+package com.mypractice;
+
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
+
+public class LambdaClosure {
+	
+	public static void main(String args[])
+	{
+		LambdaClosure lc = new LambdaClosure();
+		int i = 1;
+		lc.process(5, i, (a,b)  -> System.out.println(a+b));
+		
+		i=2;
+	}	
+	
+	public void process(int i, int b, BiConsumer<Integer, Integer> consumer) {
+		consumer.accept(i, b);
+	}
+}
+
+

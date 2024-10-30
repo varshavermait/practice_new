@@ -1,0 +1,11 @@
+package newdesign;
+
+public class GroupService {
+	public getExpensesForGroup() {
+		
+	}
+	
+	public getPaymentGraphGroup(int grpId, int userId) {
+		
+	}
+}

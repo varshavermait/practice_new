@@ -1,0 +1,12 @@
+package com.threadpractice;
+
+class Counter {
+	int static count = 1;
+	public Counter() {
+	} 
+	
+}
+
+public class RaceConditionTest {
+
+}

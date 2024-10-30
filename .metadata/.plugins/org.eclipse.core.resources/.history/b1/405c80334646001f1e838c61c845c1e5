@@ -1,0 +1,17 @@
+package com.mypractice;
+
+import java.util.function.Consumer;
+
+public class LambdaClosure {
+	
+	public static void main(String args[])
+	{
+		
+	}	
+	
+	public void process(int i, Consumer<Integer> consumer) {
+		consumer.accept(i);
+	}
+}
+
+

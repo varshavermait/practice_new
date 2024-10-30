@@ -1,0 +1,12 @@
+package designpatterns;
+
+public class TestFacadePattern {
+	// provides a unified interface to a set of interfaces
+	// defines higher lavel of interface to make things easy
+	
+	
+	public static void main(String args[])
+	{
+		
+	}
+}

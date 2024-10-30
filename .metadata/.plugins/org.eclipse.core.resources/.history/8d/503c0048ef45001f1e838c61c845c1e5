@@ -1,0 +1,32 @@
+package com.mypractice;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class LambdaPerson {
+	public static void main(String args[])
+	{
+		List<Person> persons = Arrays.asList(new Person("Ram", "10", "Lal"), new Person("Shyam", "20", "Ashu"));
+		LambdaPerson lp = new LambdaPerson();
+		Collections.sort(persons, (p1, p2) -> p1.getFname().compareTo(p2.getFname()));
+		
+		lp.printConditionally(persons, p -> true);
+		System.out.println("*******");
+		lp.printConditionally(persons, p -> p.getFname().startsWith("R"));
+		System.out.println("*******");
+		lp.printConditionally(persons, p -> p.getFname().startsWith("S"));
+		
+	}
+	
+	private void printConditionally(List<Person> persons, Predicate<Person> predicate)
+	{
+		for(Person p : persons)
+		{
+			if(predicate.test(p)) {
+				System.out.println("Person "+p.getFname()+" lastName "+p.getLname());
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+[2024-07-23 02:00:12,256] INFO Invalid session 0x100027e1deb00af for client /127.0.0.1:33452, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
+[2024-07-23 02:00:40,918] INFO Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:33456, session = 0x100027e1deb00b0 (org.apache.zookeeper.server.NIOServerCnxn)
+[2024-07-23 02:00:40,919] INFO Expiring session 0x100027e1deb00b0, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2024-07-23 02:01:21,331] INFO Invalid session 0x100027e1deb00b0 for client /127.0.0.1:51440, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
+[2024-07-23 02:02:29,148] INFO Expiring session 0x100027e1deb00b1, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2024-07-23 02:02:29,151] INFO Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:51448, session = 0x100027e1deb00b1 (org.apache.zookeeper.server.NIOServerCnxn)
+[2024-07-23 02:03:13,257] INFO Invalid session 0x100027e1deb00b1 for client /127.0.0.1:60886, probably expired (org.apache.zookeeper.server.ZooKeeperServer)

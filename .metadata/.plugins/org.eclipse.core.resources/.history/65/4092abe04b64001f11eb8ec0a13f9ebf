@@ -1,0 +1,37 @@
+package com.threadpractice;
+
+class Pen {
+	public void writeWithPenAndPaper(Paper paper)
+	{
+		System.out.println(Thread.currentThread().getName()+" is using pen "+this);
+		paper.finishedWriting();
+	}
+	
+	public void finishedWriting() {
+		System.out.println("Finished using pen");
+	}
+}
+
+class Paper {
+	public void writeWithPaperAndPen(Pen pen)
+	{
+		System.out.println(Thread.currentThread().getName()+" is using paper "+this);
+		pen.finishedWriting();
+	}
+	
+	public void finishedWriting() {
+		System.out.println("Finished using pen");
+	}
+}
+
+class 
+
+public class DeadlockExample {
+	
+	public static void main(String args[])
+	{
+		Pen pen = new Pen();
+		Paper paper = new Paper();
+		
+	}
+}
